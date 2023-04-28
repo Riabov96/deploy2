@@ -1,5 +1,5 @@
 // fetch que que demanda todos los mensajes cada vez que se ejecute la pagina principal
-setInterval(() => {
+
   fetch('/getMensajes')
     .then(res => res.json())
     .then(resMensajes => {
@@ -18,7 +18,7 @@ setInterval(() => {
       }
     });
  // ---------------------------------------------
-}, 5000);
+
 
 
 const nombre = document.querySelector("input");
